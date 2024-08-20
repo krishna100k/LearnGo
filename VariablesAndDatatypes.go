@@ -13,4 +13,28 @@ func variablesAndDatatypes() {
 	var floatNum64 float64 = 1.123456789074
 
 	fmt.Println(intNum, uintNum, floatNum32, floatNum64)
+
+
+	//Dividing an integer and a float will cause an error as both datatypes are different.
+	// fmt.Println(intNum/floatNum32)
+
+	//Type Conversion is Required
+	fmt.Println(uintNum + uint16(floatNum32))
+
+	var string string = "Hi"
+	fmt.Println(string)
+
+	//You do not need to initialize the variable everythime
+	//In this case it will set it automatically to 0 and for string it will be empty string ''
+	var integer int
+	fmt.Println(integer)
+
+	//Data type will be automatically inferred
+	var integer2 = 2
+	integer3 := 3
+	fmt.Println(integer2, integer3)
+
+	//use const in something which you dont want value to change aferwards.
+	const pi = 3.1415
+	fmt.Println(pi)
 }
